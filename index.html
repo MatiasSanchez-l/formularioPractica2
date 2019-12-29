@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario registro e inicio de sesión </title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registrarse</button>
+            </div>
+            <div class="social-icons">
+                <img src="icon/fb.png" alt="facebook">
+                <img src="icon/gp.png" alt="google">
+                <img src="icon/tw.png" alt="twitter">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="nombre de usuario" required>
+                <input type="text" class="input-field" placeholder="contraseña" required>
+                <input type="checkbox" class="check-box"><span>Recordar contraseña</span>
+                <button type="submit" class="submit-btn">Iniciar Sesión</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="nombre de usuario" required>
+                <input type="email" class="input-field" placeholder="email" required>
+                <input type="text" class="input-field" placeholder="contraseña" required>
+                <input type="checkbox" class="check-box">
+                <span>Acepto los términos y condiciones</span>
+                <button type="submit" class="submit-btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
